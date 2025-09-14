@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000; /* Black background */
+    }
+    .signin-box {
+      background-color: #1e1e1e; /* Dark gray card */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      width: 300px;
+    }
+    .signin-box h1 {
+      color: white;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .signin-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+    }
+    .signin-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .signin-box button:hover {
+      background-color: #45a049;
+    }
+  </style>
+
+</head>
+<body>
+ 
+   <div class="signin-box">
+    <h1>Sign in Page</h1>
+
+    <form action="/signin/user" method="post">
+       <input type="tel" placeholder="Contact No." name="phone" required /> 
+    
+      <input type="text" placeholder="Username" name="username" required />
+      <input type="password" placeholder=" Create Password" name="password" required />
+      <button type="submit">Signin</button>
+    </form>
+  </div>
+
+
+</body>
+</html>
